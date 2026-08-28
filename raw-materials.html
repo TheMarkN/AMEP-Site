@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raw Materials — AMEP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <div class="mono-label"><b>ROUTE.07</b> — Raw Materials</div>
+    <h1>Materials, sourced<br>directly.</h1>
+    <p class="lede">Enquire on any raw material your industry needs. AMEP sources materials directly rather than only connecting you to a listing — open to all industries, with no category focus yet.</p>
+    <div class="btn-row"><a href="#enquire" class="btn primary">Enquire on a material</a></div>
+  </div>
+</section>
+
+<section class="section" id="enquire">
+  <div class="container split">
+    <div>
+      <div class="mono-label">SEC.01 — ENQUIRY</div>
+      <h2>What material do you need?</h2>
+      <p class="lede">Supplier relationships are being built out — this enquiry is the starting point for direct sourcing.</p>
+    </div>
+    <div class="panel blueprint-frame">
+      <form class="form-grid" onsubmit="event.preventDefault(); alert('This form is a design placeholder — enquiry handling to be wired up.');">
+        <div class="field"><label for="rm-name">Name</label><input id="rm-name" type="text" required></div>
+        <div class="field"><label for="rm-email">Email</label><input id="rm-email" type="email" required></div>
+        <div class="field"><label for="rm-material">Material(s) needed</label><input id="rm-material" type="text" required></div>
+        <div class="field"><label for="rm-industry">Industry</label><input id="rm-industry" type="text"></div>
+        <div class="field"><label for="rm-notes">Notes — quantity, timeline, specifications</label><textarea id="rm-notes"></textarea></div>
+        <button class="btn primary" type="submit">Submit enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

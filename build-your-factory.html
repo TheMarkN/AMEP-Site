@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build Your Factory — AMEP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <div class="mono-label"><b>ROUTE.06</b> — Build Your Factory</div>
+    <h1>Site to<br>commissioning.</h1>
+    <p class="lede">The technicalities of designing, setting up, and commissioning an industry — delivered directly by Vertex Works. Open to small and medium manufacturers as well as larger industrial clients.</p>
+    <div class="btn-row"><a href="#enquire" class="btn primary">Start a factory enquiry</a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><div><div class="mono-label">SEC.01 — SCOPE</div><h2>End-to-end commissioning</h2></div></div>
+    <div class="pillar-list">
+      <div class="pillar"><div class="p-num">01</div><div><h3>Site &amp; facility design</h3><p>Laying out the physical plant around how production actually needs to flow.</p></div></div>
+      <div class="pillar"><div class="p-num">02</div><div><h3>Equipment &amp; machinery selection</h3><p>Matching machinery to output targets, budget, and available power and space.</p></div></div>
+      <div class="pillar"><div class="p-num">03</div><div><h3>Licensing &amp; regulatory guidance</h3><p>Navigating the approvals a plant needs before it can legally operate.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="enquire">
+  <div class="container split">
+    <div>
+      <div class="mono-label">SEC.02 — ENQUIRY</div>
+      <h2>Tell us about the facility.</h2>
+      <p class="lede">Delivered directly by Vertex Works.</p>
+    </div>
+    <div class="panel blueprint-frame">
+      <form class="form-grid" onsubmit="event.preventDefault(); alert('This form is a design placeholder — enquiry handling to be wired up.');">
+        <div class="field"><label for="f-name">Name</label><input id="f-name" type="text" required></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" required></div>
+        <div class="field"><label for="f-scale">Scale</label>
+          <select id="f-scale">
+            <option>Small / medium manufacturer</option>
+            <option>Larger industrial client</option>
+            <option>Not yet sure</option>
+          </select>
+        </div>
+        <div class="field"><label for="f-desc">Describe the facility or industry</label><textarea id="f-desc" required></textarea></div>
+        <button class="btn primary" type="submit">Submit enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

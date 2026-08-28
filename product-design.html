@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Design &amp; Development — AMEP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <div class="mono-label"><b>ROUTE.01</b> — Product Design &amp; Development</div>
+    <h1>From first sketch<br>to shelf-ready packaging.</h1>
+    <p class="lede">This page covers the full range of product design and development — concept, engineering, prototyping, and packaging — not just physical product form. Enquiries here are handed to Purple Ideation Studios.</p>
+    <div class="btn-row">
+      <a href="#enquire" class="btn primary">Send an enquiry</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="mono-label">SEC.01 — SCOPE</div><h2>What's covered</h2></div>
+    </div>
+    <div class="pillar-list">
+      <div class="pillar"><div class="p-num">01</div><div><h3>Concept &amp; strategy</h3><p>Defining what the product is, who it's for, and why it should exist in the market.</p></div></div>
+      <div class="pillar"><div class="p-num">02</div><div><h3>Design &amp; engineering</h3><p>Form, function, and manufacturability worked out together, not in sequence.</p></div></div>
+      <div class="pillar"><div class="p-num">03</div><div><h3>Prototyping</h3><p>Getting a real, testable version of the product into hand before committing to production.</p></div></div>
+      <div class="pillar"><div class="p-num">04</div><div><h3>Packaging</h3><p>The product's final presentation — the part the customer actually meets first.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="enquire">
+  <div class="container split">
+    <div>
+      <div class="mono-label">SEC.02 — ENQUIRY</div>
+      <h2>Tell us what you're building.</h2>
+      <p class="lede">This routes straight to Purple Ideation Studios — no portfolio browsing or call booking required first.</p>
+    </div>
+    <div class="panel blueprint-frame">
+      <form class="form-grid" onsubmit="event.preventDefault(); alert('This form is a design placeholder — enquiry handling to be wired up.');">
+        <div class="field"><label for="pd-name">Name</label><input id="pd-name" type="text" required></div>
+        <div class="field"><label for="pd-email">Email</label><input id="pd-email" type="email" required></div>
+        <div class="field"><label for="pd-stage">Stage of the product</label>
+          <select id="pd-stage">
+            <option>Idea / concept only</option>
+            <option>Have a rough design</option>
+            <option>Have a prototype</option>
+            <option>Ready for packaging</option>
+          </select>
+        </div>
+        <div class="field"><label for="pd-desc">Describe the product</label><textarea id="pd-desc" required></textarea></div>
+        <button class="btn primary" type="submit">Submit enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
